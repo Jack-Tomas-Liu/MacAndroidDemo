@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">webview_workflowy</string>
+    <string name="hello_world">使用webview百度地图描点</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>
