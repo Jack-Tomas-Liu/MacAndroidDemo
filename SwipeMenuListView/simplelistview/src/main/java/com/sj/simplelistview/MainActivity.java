@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private SlideListView listView;
+    private SlideCustomListView listView;
     private MyAdapter myAdapter;
     private ArrayList<String> data = new ArrayList<String>();
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 10; i++) {
             data.add("A");
         }
-        listView = (SlideListView) findViewById(R.id.listview);
+        listView = (SlideCustomListView) findViewById(R.id.listview);
         listView.setAdapter(myAdapter);
     }
 
