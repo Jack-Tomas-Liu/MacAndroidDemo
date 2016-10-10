@@ -8,8 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private WebView mWebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        mWebview = (WebView) findViewById(R.id.id_webview);
+        mWebview.loadUrl("file:///android_asset/index.html");
+        ////wView.loadUrl("file:///android_asset/index.html");
     }
 
     @Override

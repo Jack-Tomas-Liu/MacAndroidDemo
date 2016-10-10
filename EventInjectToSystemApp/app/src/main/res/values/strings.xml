@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">EventInjectToSystemApp</string>
+    <string name="app_name">浏览器里调用应用</string>
     <string name="action_settings">Settings</string>
 </resources>
