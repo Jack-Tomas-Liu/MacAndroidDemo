@@ -119,3 +119,13 @@ public class SlideCustomListView extends ListView {
  * 2 如果一个拉出来了,其余的要关掉。
  * 3 缓慢的拉出来
  **/
+
+/***
+ * 补充说明。
+ * 我们没有调用scrollTo()方法去进行瞬间
+ 偏移。没有控制，不够平滑。 本次做法如下：
+ 第一、调用Scroller实例去产生一个偏移控制(对应于startScroll()方法)
+ 第二、手动调用invalid()方法去重新绘制，剩下的就是在 computeScroll()里根据是否在滑动，获取当前
+ 应该偏移的坐标(由Scroller实例对应的computeScrollOffset()计算而得)，
+ 第三、当前应该偏移的坐标，scrollTo()方法去缓慢移动至该坐标处。
+ */
