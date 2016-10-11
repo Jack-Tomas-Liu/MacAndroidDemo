@@ -10,12 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.sj.webviewperformance.MainActivity">
 
-    <Button
-        android:text="TBS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_tbs"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="97dp" />
+    <com.tencent.smtt.sdk.WebView
+
+        android:id="@+id/id_tbswebview"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+
+        android:paddingLeft="5dp"
+
+        android:paddingRight="5dp" />
+
 </RelativeLayout>
