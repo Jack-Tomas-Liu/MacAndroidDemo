@@ -14,7 +14,7 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="openapp" android:host="openapp.com" android:pathPrefix="/open"/>
+                <data android:scheme="http" android:host="openapp.com" android:pathPrefix="/open"/>
 
             </intent-filter>
         </activity>
