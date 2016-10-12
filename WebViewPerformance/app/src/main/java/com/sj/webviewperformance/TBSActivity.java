@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 //import android.webkit.WebView;
 import com.tencent.smtt.sdk.WebView;
@@ -63,5 +64,26 @@ public class TBSActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
 
+    }
+
+    /**
+     * 重写返回键的事件，让它返回上一个页面,是首页的时候回到上一级。
+     *
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if (mWebView.canGoBack()) {
+                mWebView.goBack();//返回上一页面
+                return true;
+            }else {
+                finish();
+                return true;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }
