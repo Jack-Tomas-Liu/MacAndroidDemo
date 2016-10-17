@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item Android:maxLevel="1" Android:drawable="@drawable/img_audio_selected_old"/>
+    <item Android:maxLevel="2" Android:drawable="@drawable/img_audio_no_select"/>
+    <item Android:maxLevel="3" Android:drawable="@drawable/img_audio_selected"/>
+</level-list>
+
