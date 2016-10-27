@@ -11,11 +11,27 @@
     tools:context="com.sj.webviewperformance.MainActivity">
 
     <Button
+        android:text="视频播放"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_video"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp" />
+
+    <Button
         android:text="TBS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_tbs"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="97dp" />
+        android:layout_alignStart="@+id/btn_video" />
+
+    <Button
+        android:text="原生"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_native"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_video"
+        android:layout_alignStart="@+id/btn_video" />
 </RelativeLayout>

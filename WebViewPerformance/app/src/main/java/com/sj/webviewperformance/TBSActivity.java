@@ -19,7 +19,7 @@ import android.widget.Button;
 
 public class TBSActivity extends AppCompatActivity implements View.OnClickListener{
     WebView mWebView;
-    String link =  "http://www.youku.com";
+    String link =  "http://163.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

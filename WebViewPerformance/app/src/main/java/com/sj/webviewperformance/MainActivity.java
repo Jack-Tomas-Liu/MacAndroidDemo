@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.SimpleAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button mTBS;
+    Button mTBS,mViideo,mNative;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mTBS = (Button)findViewById(R.id.btn_tbs);
         mTBS.setOnClickListener(this);
+        mViideo = (Button)findViewById(R.id.btn_video);
+        mViideo.setOnClickListener(this);
+        mNative = (Button)findViewById(R.id.btn_native);
+        mNative.setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +32,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_tbs:
                 startActivity(new Intent(MainActivity.this,TBSActivity.class));
                 break;
+            case R.id.btn_video:
+                //TbsVideo
+                break;
+            case R.id.btn_native:
+                //TbsVideo
+                startActivity(new Intent(MainActivity.this,NativeActivity.class));
+
+                break;
+
         }
     }
 }
